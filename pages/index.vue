@@ -3,14 +3,14 @@
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center flex flex-col justify-center">
         <div class="flex justify-center">
-          <img src="/vrehm-picture.jpeg" class="rounded-lg h-56" />
+          <img src="/vrehm-picture.jpeg" class="rounded-lg h-48" />
         </div>
         <p
-          class="text-xl leading-6 text-teal-600 font-semibold tracking-wide uppercase pt-8 pb-4"
+          class="text-xl leading-6 text-teal-600 font-semibold tracking-wide uppercase py-4"
         >
           Vincent REHM
         </p>
-        <div class="my-4">
+        <div class="my-2">
           <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-2 gap-4">
               <div
@@ -55,6 +55,18 @@
               </div>
             </div>
           </div>
+        </div>
+        <div class="mt-2 mb-4">
+          <button
+            class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-full"
+          >
+            <Mailto
+              :mail="email"
+              subject="Prise de contact - projet pour NOM DE L'ENTREPRISE"
+              title="Me contacter par email"
+              >Me contacter par email</Mailto
+            >
+          </button>
         </div>
         <h3
           class="mt-2 text-3xl leading-8 font-extrabold tracking-tight text-gray-900 sm:text-4xl sm:leading-10"
@@ -204,6 +216,14 @@
   </div>
 </template>
 
-<script></script>
+<script>
+export default {
+  data() {
+    return {
+      email: process.env.email
+    }
+  }
+}
+</script>
 
 <style></style>

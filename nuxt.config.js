@@ -1,5 +1,9 @@
 /* eslint-disable prettier/prettier */
+require('dotenv').config()
 export default {
+    env: {
+        email: process.env.EMAIL
+    },
     mode: 'universal',
     /*
      ** Headers of the page
@@ -51,7 +55,9 @@ export default {
         '@nuxtjs/axios',
         '@nuxtjs/pwa',
         // Doc: https://github.com/nuxt-community/dotenv-module
-        '@nuxtjs/dotenv'
+        '@nuxtjs/dotenv',
+        // Doc: https://github.com/mmoollllee/nuxt-protected-mailto
+        'nuxt-protected-mailto'
     ],
     purgeCSS: {
         extractors: () => [{
@@ -74,9 +80,10 @@ export default {
      ** Build configuration
      */
     build: {
-        /*
-         ** You can extend webpack config here
-         */
-        extend(config, ctx) {}
+        html: {
+            minify: {
+                decodeEntities: false
+            }
+        }
     }
 }
