@@ -3,7 +3,7 @@
     <div class="max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
       <div class="lg:text-center flex flex-col justify-center">
         <div class="flex justify-center">
-          <img src="/vrehm-picture.jpeg" class="rounded-lg h-48" />
+          <img src="/vrehm-picture-resized.jpg" class="rounded-lg h-48" />
         </div>
         <p
           class="text-xl leading-6 text-teal-600 font-semibold tracking-wide uppercase py-4"
