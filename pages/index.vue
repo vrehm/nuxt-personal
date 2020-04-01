@@ -6,7 +6,7 @@
           <img src="/vrehm-picture-resized.jpg" class="rounded-lg h-48" />
         </div>
         <p
-          class="text-xl leading-6 text-teal-600 font-semibold tracking-wide uppercase py-4"
+          class="text-xl leading-6 text-teal-600 font-semibold tracking-wide uppercase py-4 text-center"
         >
           Vincent REHM
         </p>
@@ -56,7 +56,7 @@
             </div>
           </div>
         </div>
-        <div class="mt-2 mb-4">
+        <div class="mt-2 mb-4 max-w-screen-xl mx-auto px-4 sm:px-6 lg:px-8">
           <button
             class="bg-teal-500 hover:bg-teal-600 text-white font-bold py-2 px-4 rounded-full"
           >
