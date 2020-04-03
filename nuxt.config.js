@@ -75,7 +75,10 @@ export default {
      ** Axios module configuration
      ** See https://axios.nuxtjs.org/options
      */
-    axios: {},
+    axios: {
+        baseURL: process.env.MODE === 'production' || process.env.NODE_ENV === 'production' ?
+            process.env.BACKEND_URL : 'http://localhost:1337'
+    },
     /*
      ** Build configuration
      */
