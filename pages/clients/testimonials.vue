@@ -83,7 +83,7 @@
 
           <div class="relative lg:ml-10">
             <svg
-              class="absolute top-0 left-0 transform -translate-x-8 -translate-y-24 h-36 w-36 text-indigo-200 opacity-50"
+              class="absolute top-0 left-0 transform -translate-x-8 -translate-y-24 h-36 w-36 text-teal-200 opacity-50"
               stroke="currentColor"
               fill="none"
               viewBox="0 0 144 144"
@@ -113,9 +113,7 @@
                       {{ client.contact.firstname }}
                       {{ client.contact.lastname }}
                     </div>
-                    <div
-                      class="text-base leading-6 font-medium text-indigo-600"
-                    >
+                    <div class="text-base leading-6 font-medium text-teal-600">
                       CEO @ {{ client.project.title }}
                     </div>
                   </div>
