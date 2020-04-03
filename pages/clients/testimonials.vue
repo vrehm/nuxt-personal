@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="bg-white overflow-hidden">
+    <div class="bg-gray-100 overflow-hidden">
       <div
         v-for="client in clients"
         :key="client.id"
